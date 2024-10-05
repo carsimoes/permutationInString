@@ -11,9 +11,11 @@ namespace PermutationInString_Tests
             string s1 = "ab";
             string s2 = "eidbaooo";
 
-            var result = Permutation.CheckInclusionMethod1(s1, s2);
+            var result1 = Permutation.CheckInclusionMethod1(s1, s2);
+            //var result2 = Permutation.CheckInclusionMethod2(s1, s2);
 
-            result.Should().BeTrue();
+            result1.Should().BeTrue();
+            //result2.Should().BeTrue();
         }
 
         [Fact]

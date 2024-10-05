@@ -48,5 +48,30 @@
 
             return true;
         }
+
+        /// <summary>
+        /// 
+        /// Method 2 
+        /// Sort the two strings's characters.
+        /// Compare the results to see if they're identical.
+        /// 
+        /// </summary>
+        /// <param name="str1"></param>
+        /// <param name="str2"></param>
+        /// <returns></returns>
+        public static bool CheckInclusionMethod2(string str1, string str2)
+        {
+            //TODO: Validate this
+            //if (str1.Length != str2.Length)
+            //    return false;
+
+            char[] a = str1.ToCharArray();
+            char[] b = str2.ToCharArray();
+
+            Array.Sort(a);
+            Array.Sort(b);
+
+            return Array.Equals(a, b);
+        }
     }
 }
