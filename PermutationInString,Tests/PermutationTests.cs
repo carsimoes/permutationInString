@@ -11,11 +11,9 @@ namespace PermutationInString_Tests
             string s1 = "ab";
             string s2 = "eidbaooo";
 
-            var result1 = Permutation.CheckInclusionMethod1(s1, s2);
-            //var result2 = Permutation.CheckInclusionMethod2(s1, s2);
+            var result = Permutation.CheckInclusionMethod3(s1, s2);
 
-            result1.Should().BeTrue();
-            //result2.Should().BeTrue();
+            result.Should().BeTrue();
         }
 
         [Fact]
@@ -24,7 +22,7 @@ namespace PermutationInString_Tests
             string s1 = "ab";
             string s2 = "eidboaoo";
 
-            var result = Permutation.CheckInclusionMethod1(s1, s2);
+            var result = Permutation.CheckInclusionMethod3(s1, s2);
 
             result.Should().BeFalse();
         }
@@ -35,7 +33,7 @@ namespace PermutationInString_Tests
             string s1 = "test";
             string s2 = "ttew";
 
-            var result = Permutation.CheckInclusionMethod1(s1, s2);
+            var result = Permutation.CheckInclusionMethod3(s1, s2);
 
             result.Should().BeTrue();
         }
